@@ -22,8 +22,14 @@
   </ul>
   
   <script>
-     // write your code here 
-     // ......
+    var ul =  document.getElementById("no");
+	var list = ul.querySelectorAll('li');
+	for (var i = 0; i < list.length; i++) {
+        list[i].index = i+1;
+	}
+	ul.addEventListener('click',function(e){
+        alert(e.target.index);
+})
   </script>
   </body>
   </html>
